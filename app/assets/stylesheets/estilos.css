@@ -1,0 +1,60 @@
+.cuerpo{
+    margin-top: 80px;
+    
+}
+#navbar-principal{
+    position:fixed;
+    position: sticky;
+    background-color: rgb(2, 33, 172);
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 50px;;
+    z-index: 9999;
+}
+    .navcolor{
+        -webkit-text-fill-color: rgb(255, 255, 255);
+
+    }
+.libre{
+    color: rgb(114, 185, 6);
+}
+.arriendo{
+    color:crimson;
+}
+button{
+    background-color: aqua;
+}
+
+.decoration{
+    text-decoration: none;
+    list-style:none;
+}
+
+.centrar{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.crear{
+    text-align: center;
+    margin-top: 10px;
+    position: fixed;
+    left: 100px;
+ 
+}
+.white{
+    color: darkgray;
+}
+
+.sizeimage{
+    width: 160px;
+    height: 50px;
+}
+
+.margen{
+    margin-top: 5px;
+}
+
+.selector{
+    margin-top: 5px;
+}

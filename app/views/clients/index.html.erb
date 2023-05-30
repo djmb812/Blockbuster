@@ -1,0 +1,18 @@
+<p style="color: green"><%= notice %></p>
+<div class="centrar">
+  <h1>Clientes</h1>
+</div>
+
+<div class="crear">
+  <%= link_to "Crear Cliente", new_client_path, class: "btn btn-primary" %>
+</div>
+
+<div class="container mb-5">
+  <div id="clients">
+    <div class="row">
+        <% @clients.each do |client| %>
+          <%= render client %>
+        <% end %>
+    </div>
+  </div>
+</div>

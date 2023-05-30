@@ -1,0 +1,22 @@
+<div id="navbar-principal">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <div class="d-flex align-items-center">
+        <%= link_to root_path, class: 'navbar-brand' do %>
+        <%= image_tag('Blockbuster_logo.png', alt: 'Blockbuster Logo', class: 'sizeimage') %>
+        <% end %> 
+        <div class="dropdown">
+          <button class="btn btn dropdown-toggle navcolor" type="button" data-bs-toggle="dropdown" aria-expanded="false">Ir a</button>
+          <ul class="dropdown-menu dropdown-menu-end mt-3">
+            <li class="dropdown-item">
+              <%= link_to 'Clients', clients_path, class: 'nav-link'%>
+            </li>
+            <li class="dropdown-item">
+              <%= link_to 'Movies', movies_path, class: 'nav-link ' %>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>

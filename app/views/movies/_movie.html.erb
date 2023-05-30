@@ -1,0 +1,27 @@
+
+<div class="col-4 py-2">
+  <div class="card text-bg-light">
+    <h5 class="card-header centrar"><%= movie.name %></h5>
+    <% if movie.client %>
+      <h5 class="container mt-3 arriendo centrar">Arrendada Por: </h5><p class="container arriendo"><%= movie.client.name %></p>
+      <%else%>
+        <h5 class="centrar mt-3 libre">Libre de arriendo</h5>
+    <% end %>
+    <div class="card-body">
+      <% if action_name == "index" %>
+      <div class="row">
+        <%= link_to "Mostrar Pelicula", movie, class: "btn btn-primary" %>
+      </div>
+      <% else %>
+      <div class="row">
+        <div class="mb-1">
+          <%= link_to "Editar", edit_movie_path(@movie), class:"btn btn-primary col-12 " %>
+        </div>
+        <div class="mt-1">
+          <%= button_to "Eliminar", @movie, method: :delete, class:"btn btn-primary col-12" %>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  </div> 
+</div>
